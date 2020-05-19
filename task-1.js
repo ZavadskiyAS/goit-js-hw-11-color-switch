@@ -28,13 +28,11 @@ function randomColor() {
 function runStartBtn() {
   start.disabled = true;
   //   console.log("click Start");
-  // start.removeEventListener("click", runStartBtn);
   interval = setInterval(randomColor, 1000);
 }
 
 function runStopBtn() {
   start.disabled = false;
-  // start.addEventListener("click", runStartBtn)
   //   console.log("click Stop");
   clearInterval(interval);
 }
